@@ -1,12 +1,12 @@
 // click hamburger menu
-const button = document.getElementsByClassName("fa-bars");
-const hamburgerMenu = document.getElementsByClassName("hamburger-menu");
+const button = document.querySelector(".fa-bars");
+const hamburgerMenu = document.querySelector(".hamburger-menu");
 
 button.addEventListener("click",
 
 function(){
 
-    document.getElementsByClassName("hamburger-menu").style.display = "unset";
+    document.querySelector(".hamburger-menu").style.display = "unset";
 }
 
 
