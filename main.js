@@ -1,30 +1,31 @@
-// click hamburger menu
-const button = document.querySelector(".fa-bars");
-var hamburgerMenu = document.querySelector(".hamburger-menu");
-const buttonClose = document.querySelector(".fa-times");
+const openMenu = document.querySelector(".header-right > a");
+const hamMenu = document.querySelector(".hamburger-menu");
+const closeMenu = document.querySelector(".close");
 
-// rimozione active
-// document.querySelector(".hamburger-menu").classList.add("active");
-
-// bottone apertura
-button.addEventListener("click",
+// apertura menù
+openMenu.addEventListener('click',
 
 function(){
+    hamMenu.classList.add("active");
 
-    document.querySelector(".hamburger-menu").style.display = "unset";
 }
+
 );
 
-// bottone chiusura
-buttonClose.addEventListener("click",
+// chiusura menù
+
+closeMenu.addEventListener('click',
 
 function(){
+    hamMenu.classList.remove("active");
 
-    document.querySelector(".hamburger-menu").style.display = "none";
-    
 }
+
 );
 
+
+
+ 
 
 
 
